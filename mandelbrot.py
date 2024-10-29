@@ -22,12 +22,15 @@ for x in range(width):
         for i in range(max_iter):
             z = z * z + c
             if abs(z) > 2.0:
-                mandelbrot_image[y, x] = i
+                mandelbrot_image[x, y] = i
                 break
 
 # Plot the Mandelbrot set using matplotlib
 plt.imshow(mandelbrot_image.T, extent=[xmin, xmax, ymin, ymax], cmap='hot')
 plt.colorbar()
 plt.title('Mandelbrot Set')
+# Save the plot as an image
+plt.savefig("mandelbrot_set.png")
+# Optionally show the plot (in case the environment supports it)
 plt.show()
-print("Done")
+print("Done Again")
