@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+print("Working")
 
 # Define the size of the image (number of pixels)
 width, height = 800, 800
@@ -18,7 +19,7 @@ for x in range(width):
     for y in range(height):
         # Convert pixel coordinate to a point in the complex plane
         c = complex(x * (xmax - xmin) / width + xmin, y * (ymax - ymin) / height + ymin)
-        z = 0.0j
+        z = 0.0
         for i in range(max_iter):
             z = z * z + c
             if abs(z) > 2.0:
@@ -33,4 +34,4 @@ plt.title('Mandelbrot Set')
 plt.savefig("mandelbrot_set.png")
 # Optionally show the plot (in case the environment supports it)
 plt.show()
-print("Done Again")
+print("Done")
