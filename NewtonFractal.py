@@ -41,6 +41,7 @@ plt.colorbar(ticks=[1, 2, 3], label="Root Convergence")
 plt.title("Newton Fractal for $z^3 - 1 = 0$")
 # Save the plot as an image
 plt.savefig("newton_fractal.png")
-# Optionally show the plot (in case the environment supports it)
-plt.show()
+# Show the plot if the environment supports it. Git does not. 
+#plt.show()
+
 print("Done")
