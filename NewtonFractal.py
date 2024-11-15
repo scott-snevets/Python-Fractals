@@ -37,7 +37,7 @@ for k in range(max_iterations):
 # Plot the fractal
 plt.figure(figsize=(8, 8))
 plt.imshow(fractal_image, extent=(-1.5, 1.5, -1.5, 1.5), cmap="viridis")
-plt.colorbar(ticks=[1, 2, 3], label="Root Convergence")
+#plt.colorbar(ticks=[1, 2, 3], label="Root Convergence")
 plt.title("Newton Fractal for $z^3 - 1 = 0$")
 # Save the plot as an image
 plt.savefig("newton_fractal.png")
